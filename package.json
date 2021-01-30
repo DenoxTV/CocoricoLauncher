@@ -42,7 +42,7 @@
   "devDependencies": {
     "cross-env": "^7.0.2",
     "electron": "^10.2.0",
-    "electron-builder": "^22.8.0",
+    "electron-builder": "^22.9.1",
     "eslint": "^7.18.0"
   },
   "repository": {
