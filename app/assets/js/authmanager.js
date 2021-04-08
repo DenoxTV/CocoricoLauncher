@@ -157,11 +157,8 @@ exports.validateSelected = async function(){
 exports.addMSAccount = async authCode => {
     try {
         const accessToken = await Microsoft.getAccessToken(authCode)
-        console.log('Microsoft access token: ', accessToken)
         const MCAccessToken = await Microsoft.authMinecraft(accessToken.access_token)
-        console.log('Minecraft access token: ', MCAccessToken)
         const minecraftBuyed = await Microsoft.checkMCStore(MCAccessToken.access_token)
-        console.log(accessToken, MCAccessToken, minecraftBuyed)
         if(!minecraftBuyed)
             return Promise.reject({
                 message: 'You didn\'t buy Minecraft! Please use another Microsoft account or buy Minecraft.'

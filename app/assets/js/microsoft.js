@@ -43,7 +43,7 @@ function getXBLToken(accessToken) {
         }
         requestPromise(authXBLUri, options).then(response => {
             const body = response.body
-
+            console.log('getXBLToken(): ', body)
             data.token = body.Token
             data.uhs = body.DisplayClaims.xui[0].uhs
 
@@ -68,6 +68,7 @@ function getXSTSToken(XBLToken) {
             }
         }
         requestPromise(authXSTSUri, options).then(response => {
+            console.log('getXSTSToken(): ', response.body)
             if (response.body.XErr) {
                 switch (response.body.XErr) {
                     case 2148916233:
@@ -105,6 +106,7 @@ function getMCAccessToken(UHS, XSTSToken) {
         }
         requestPromise(authMCUri, options).then(response => {
             const body = response.body
+            console.log('getMCAccessToken(): ', body)
 
             expiresAt.setSeconds(expiresAt.getSeconds() + body.expires_in)
             data.access_token = body.access_token
@@ -177,9 +179,13 @@ exports.refreshAccessToken = refreshToken => {
 
 exports.authMinecraft = async accessToken => {
     try {
+        console.log('authMinecraft() | accessToken: ', accessToken)
         const XBLToken = await getXBLToken(accessToken)
+        console.log('authMinecraft() | XBLToken: ', XBLToken)
         const XSTSToken = await getXSTSToken(XBLToken.token)
+        console.log('authMinecraft() | XSTSToken: ', XSTSToken)
         const MCToken = await getMCAccessToken(XBLToken.uhs, XSTSToken)
+        console.log('authMinecraft() | MCToken: ', MCToken)
 
         return MCToken
     } catch (error) {
