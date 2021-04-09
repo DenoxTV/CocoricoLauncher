@@ -167,8 +167,9 @@ exports.addMSAccount = async authCode => {
         const ret = ConfigManager.addMsAuthAccount(MCProfile.id, MCAccessToken.access_token, MCProfile.name, MCAccessToken.expires_at, accessToken.access_token, accessToken.refresh_token)
         ConfigManager.save()
 
-        return ret
+        Promise.resolve(ret)
     } catch(error) {
+        console.log('addMSAccount() | ERROR: ', error)
         return Promise.reject(error)
     }
 }
