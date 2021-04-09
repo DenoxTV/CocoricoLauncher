@@ -2,25 +2,25 @@
     "version": "1.0.0",
     "discord": {
         "clientId": "385581240906022916",
-        "smallImageText": "WesterosCraft",
+        "smallImageText": "CocoricoMC",
         "smallImageKey": "seal-circle"
     },
     "java": {
         "oracle": "http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html"
     },
-    "rss": "https://forum.westeroscraft.com/forum/news.2/index.rss",
+    "rss": "",
     "servers": [
         {
-            "id": "WesterosCraft-1.11.2",
-            "name": "WesterosCraft Production Server",
-            "description": "Main WesterosCraft server. Connect to enter the Realm.",
-            "icon": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/server-prod.png",
+            "id": "cocoricomc-1.12.2",
+            "name": "CocoricoMC",
+            "description": "Serveur CocoricoMC.",
+            "icon": "https://cocorico-mc.pr11.fr/logo.png",
             "version": "3.9.4",
-            "address": "mc.westeroscraft.com",
+            "address": "srv01.cocorico-mc.tk",
             "minecraftVersion": "1.11.2",
             "discord": {
-                "shortId": "Production",
-                "largeImageText": "WesterosCraft Production Server",
+                "shortId": "CocoricoMC",
+                "largeImageText": "Serveur CocoricoMC",
                 "largeImageKey": "server-prod"
             },
             "mainServer": true,
