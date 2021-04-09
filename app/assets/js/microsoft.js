@@ -189,6 +189,7 @@ exports.authMinecraft = async accessToken => {
 
         return MCToken
     } catch (error) {
+        console.log('authMinecraft() | ERROR: ', error)
         Promise.reject(error)
     }
 }
