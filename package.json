@@ -1,13 +1,13 @@
 {
-  "name": "helioslauncher",
-  "version": "1.8.0",
-  "productName": "Helios Launcher",
+  "name": "cocoricolauncher",
+  "version": "v1.2.2",
+  "productName": "Launcher de CocoricoMC",
   "description": "Modded Minecraft Launcher",
-  "author": "Daniel Scalzi (https://github.com/dscalzi/)",
+  "author": "Daniel Scalzi (https://github.com/dscalzi/) + DenoxTV & Coera",
   "license": "UNLICENSED",
-  "homepage": "https://github.com/dscalzi/HeliosLauncher",
+  "homepage": "https://github.com/DenoxTV/CocoricoLauncher",
   "bugs": {
-    "url": "https://github.com/dscalzi/HeliosLauncher/issues"
+    "url": "https://github.com/DenoxTV/CocoricoLauncher/issues"
   },
   "private": true,
   "main": "index.js",
@@ -25,28 +25,28 @@
     "node": "12.x.x"
   },
   "dependencies": {
-    "adm-zip": "^0.5.1",
+    "adm-zip": "^0.5.4",
     "async": "^3.2.0",
-    "discord-rpc": "^3.1.4",
-    "ejs": "^3.1.5",
+    "discord-rpc": "^3.2.0",
+    "ejs": "^3.1.6",
     "ejs-electron": "^2.1.1",
-    "electron-updater": "^4.3.5",
+    "electron-updater": "^4.3.8",
     "fs-extra": "^9.0.1",
     "github-syntax-dark": "^0.5.0",
-    "jquery": "^3.5.1",
+    "jquery": "^3.6.0",
     "request": "^2.88.2",
-    "semver": "^7.3.4",
+    "semver": "^7.3.5",
     "tar-fs": "^2.1.1",
     "winreg": "^1.2.4"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
-    "electron": "^11.0.5",
-    "electron-builder": "^22.9.1",
-    "eslint": "^7.15.0"
+    "electron": "^12.0.2",
+    "electron-builder": "^22.10.5",
+    "eslint": "^7.23.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dscalzi/HeliosLauncher.git"
+    "url": "git+https://github.com/DenoxTV/CocoricoLauncher.git"
   }
 }

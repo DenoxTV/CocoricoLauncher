@@ -2,7 +2,7 @@
 const request = require('request')
 
 // Constants
-const clientId = 'client id here'
+const clientId = 'c0c66227-d563-4fa5-b813-5697270a066a'
 
 const tokenUri = 'https://login.microsoftonline.com/consumers/oauth2/v2.0/token'
 const authXBLUri = 'https://user.auth.xboxlive.com/user/authenticate'
@@ -79,7 +79,7 @@ function getXSTSToken(XBLToken) {
         
                     case 2148916238: 
                         reject({
-                            message: 'Since you are not yet 18 years old, an adult must add you to a family in order for you to use Helios Launcher!'
+                            message: 'Since you are not yet 18 years old, an adult must add you to a family in order for you to use CocoricoMC Launcher!'
                         })
                         return
                 
