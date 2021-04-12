@@ -49,7 +49,7 @@ function getXBLToken(accessToken) {
 
             resolve(data)
         }).catch(error => {
-            reject(error)
+            resolve(error)
         })
     })
 }
@@ -182,14 +182,17 @@ exports.authMinecraft = async accessToken => {
         console.log('authMinecraft() | accessToken: ', accessToken)
         const XBLToken = await getXBLToken(accessToken)
         console.log('authMinecraft() | XBLToken: ', XBLToken)
+        console.log('authMinecraft() | XBLToken.token: ', XBLToken.token)
+        console.log('authMinecraft() | XBLToken.uhs: ', XBLToken.uhs)
+        console.log('authMinecraft() | JSON.stringofy(XBLToken): ', JSON.stringify(XBLToken))
         const XSTSToken = await getXSTSToken(XBLToken.token)
-        console.log('authMinecraft() | XSTSToken: ', XSTSToken)
+        console.log('authMinecraft() | XSTSToken: ', JSON.stringify(XSTSToken))
         const MCToken = await getMCAccessToken(XBLToken.uhs, XSTSToken)
         console.log('authMinecraft() | MCToken: ', MCToken)
 
         return MCToken
     } catch (error) {
-        console.log('authMinecraft() | ERROR: ', error)
+        console.log('authMinecraft() | ERROR: ', JSON.stringify(error))
         Promise.reject(error)
     }
 }
