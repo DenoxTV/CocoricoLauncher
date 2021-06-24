@@ -23,6 +23,7 @@
     "node": "14.x.x"
   },
   "dependencies": {
+    "@electron/remote": "^1.2.0",
     "adm-zip": "^0.5.5",
     "async": "^3.2.0",
     "discord-rpc": "^3.2.0",
@@ -38,9 +39,8 @@
     "winreg": "^1.2.4"
   },
   "devDependencies": {
-    "cross-env": "^7.0.3",
     "electron": "^13.1.4",
-    "electron-builder": "^22.10.5",
+    "electron-builder": "^22.11.7",
     "eslint": "^7.29.0"
   },
   "repository": {
