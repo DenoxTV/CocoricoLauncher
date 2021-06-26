@@ -1,5 +1,5 @@
-appId: 'helioslauncher'
-productName: 'Helios Launcher'
+appId: 'cocoricolauncher'
+productName: 'COcoricoLauncher'
 artifactName: '${productName}-setup-${version}.${ext}'
 
 copyright: 'Copyright © 2018-2021 Daniel Scalzi'
@@ -42,7 +42,7 @@ linux:
   maintainer: 'Daniel Scalzi'
   vendor: 'Daniel Scalzi'
   synopsis: 'Modded Minecraft Launcher'
-  description: 'Custom launcher which allows users to join modded servers. All mods, configurations, and updates are handled automatically.'
+  description: 'Launcher de CocoricoMC - Permet de vous connecter à CocoricoMC avec le launcher officiel'
   category: 'Game'
 
 
