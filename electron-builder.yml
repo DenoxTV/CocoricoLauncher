@@ -1,5 +1,5 @@
 appId: 'cocoricolauncher'
-productName: 'COcoricoLauncher'
+productName: 'CocoricoLauncher'
 artifactName: '${productName}-setup-${version}.${ext}'
 
 copyright: 'Copyright © 2018-2021 Daniel Scalzi'
