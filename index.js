@@ -9,6 +9,9 @@ const isDev                         = require('./app/assets/js/isdev')
 const path                          = require('path')
 const semver                        = require('semver')
 const { pathToFileURL }             = require('url')
+const redirectUriPrefix = 'https://login.microsoftonline.com/common/oauth2/nativeclient?'
+const clientID = 'c0c66227-d563-4fa5-b813-5697270a066a'
+
 
 // Setup auto updater.
 function initAutoUpdater(event, data) {

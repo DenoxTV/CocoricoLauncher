@@ -10,6 +10,7 @@ const authXSTSUri = 'https://xsts.auth.xboxlive.com/xsts/authorize'
 const authMCUri = 'https://api.minecraftservices.com/authentication/login_with_xbox'
 const profileURI = 'https://api.minecraftservices.com/minecraft/profile'
 
+
 // Functions
 function requestPromise(uri, options) {
     return new Promise((resolve, reject) => {
